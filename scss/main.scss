@@ -1,0 +1,300 @@
+@import "config";
+
+@font-face {
+  font-family: novaLight;
+  src: url("../fonts/novaLight.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: novaLight;
+  box-sizing: border-box;
+}
+
+.current {
+  color: $green !important;
+  background: #2d2f30;
+}
+img {
+  width: 100%;
+}
+//Header
+
+#header-main {
+  background: url("../img/main.jpg") no-repeat center right / cover;
+  height: 100vh;
+  border-bottom: 5px solid $green;
+}
+
+.contact-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: #2d2f35;
+  color: #ffffff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+
+  .contact-wrap {
+    display: flex;
+    .email {
+      padding-right: 12rem;
+      padding-left: 5px;
+      color: #9b9b9b;
+      border-left: 1px solid #b3d045;
+      transition: color 0.5s;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    .number {
+      padding-right: 10px;
+    }
+  }
+}
+
+//Navbar
+.nav {
+  .nav-bar {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    transition: all 0.3s;
+    position: fixed;
+    left: 0; /* ADDED */
+    top: 55px; /* ADDED */
+    width: 100%;
+
+    img {
+      width: 136px !important;
+      height: 100%;
+      padding-top: 20px;
+      margin-left: 15%;
+      transition: width 0.5s;
+    }
+
+    .category {
+      display: flex;
+      position: relative;
+      padding-top: 20px;
+      align-items: center;
+      padding-right: 10%;
+      font-family: proxima_nova_rgbold;
+      text-transform: uppercase;
+      font-weight: 800;
+      transition: all 0.5s;
+
+      li {
+        padding-left: 20px;
+
+        a {
+          color: #ffffff;
+          padding: 7px 22px;
+          transition: color 0.5s;
+          transition: background 0.5s;
+
+          &:hover {
+            color: $green;
+            background: #2d2f30;
+          }
+        }
+      }
+    }
+  }
+
+  .bg {
+    background: #212125;
+    top: 35px;
+
+    img {
+      width: 122px !important;
+      padding: 0;
+    }
+
+    .category {
+      padding-top: 0;
+    }
+  }
+
+  .home-banner {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 90px;
+    line-height: 80px;
+    padding-top: 25%;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    .fade-in {
+      opacity: 1 !important;
+      margin-right: 8%;
+      transition: all 0.5s;
+    }
+
+    .opacity {
+      opacity: 0;
+    }
+  }
+}
+
+//Section
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #ffffff;
+  height: 80vh;
+
+  .award-winning-a {
+    background: url("../img/award-win-bg.jpg") no-repeat center / cover;
+
+    .bg-dark {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 80vh;
+
+      .content {
+        padding-top: 65px;
+        padding-left: 100px;
+        transition: all 0.5s;
+
+        img {
+          width: 256px;
+          height: 165px;
+          padding-top: 2rem;
+        }
+        h4 {
+          padding-top: 4rem;
+        }
+        p {
+          padding-top: 2rem;
+          line-height: 26px;
+          width: 400px;
+          font-weight: 400;
+        }
+      }
+      .fade-in {
+        padding-left: 200px;
+      }
+      .opacity {
+        opacity: 0;
+      }
+    }
+  }
+  .award-winning-b {
+    background: url("../img/award-win-bg.jpg") no-repeat center / cover;
+
+    .content {
+      &-a {
+        padding-top: 100px;
+        padding-left: 200px;
+        display: grid;
+        grid-template-areas:
+          "text-w text-w"
+          "pic pic";
+        gap: 4rem;
+        transition: all 0.5s;
+
+        .content-top {
+          grid-area: text-w;
+          width: 62%;
+          display: flex;
+          justify-content: space-around;
+          .logo {
+            width: 136px;
+          }
+        }
+
+        .devices {
+          grid-area: pic;
+          padding-top: 300px;
+          padding-left: 200px;
+          padding-right: 250px;
+          animation: device 8s infinite alternate;
+        }
+        @keyframes device {
+          0% {
+            animation-timing-function: ease-in-out;
+            background: url("https://spinx-live-6jsc7gkvbdujvrbfu3miqzaj1t1.netdna-ssl.com/images/pf-img.png")
+              no-repeat;
+          }
+          25% {
+            animation-timing-function: ease-in-out;
+            background: url("https://spinx-live-6jsc7gkvbdujvrbfu3miqzaj1t1.netdna-ssl.com/images/aiya-img.png")
+              no-repeat;
+          }
+
+          50% {
+            animation-timing-function: ease-in-out;
+            background: url("https://spinx-live-6jsc7gkvbdujvrbfu3miqzaj1t1.netdna-ssl.com/images/qe-award-img.png")
+              no-repeat;
+          }
+          75% {
+            animation-timing-function: ease-in-out;
+            background: url("https://spinx-live-6jsc7gkvbdujvrbfu3miqzaj1t1.netdna-ssl.com/images/wet-wild-img.png")
+              no-repeat;
+          }
+          100% {
+            animation-timing-function: ease-in-out;
+            background: url("https://spinx-live-6jsc7gkvbdujvrbfu3miqzaj1t1.netdna-ssl.com/images/pf-img.png")
+              no-repeat;
+          }
+        }
+      }
+    }
+    .opacity {
+      opacity: 0;
+    }
+    .fade-in {
+      padding-left: 100px;
+    }
+  }
+}
+
+footer {
+  height: 4rem;
+  background: #2f2f35;
+
+  .footer-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+
+    .social-media {
+      display: flex;
+
+      a {
+        width: 50px;
+        color: #ffffff;
+        padding-right: 1rem;
+        opacity: 0.5;
+        transition: opacity 0.5s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
