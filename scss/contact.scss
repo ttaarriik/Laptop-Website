@@ -1,0 +1,118 @@
+@import "config";
+
+.contact-bar {
+  z-index: 9999;
+}
+
+#header-contact {
+  height: 16vh;
+  .nav-bar {
+    background: #212125;
+    top: 35px !important;
+    z-index: 9999;
+  }
+}
+
+#contact-section {
+  background: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")
+    no-repeat center / cover;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+
+  .contact-left {
+    background: rgba(0, 0, 0, 0.8);
+    form {
+      transform: translateX(-100px);
+      opacity: 0;
+      transition: all 0.5s;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5% 20%;
+
+      h1 {
+        color: $green;
+      }
+
+      input {
+        height: 39px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid transparent;
+      }
+      textarea {
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid transparent;
+      }
+      button {
+        padding: 10px;
+        width: 30%;
+        margin-top: 20px;
+        background: transparent;
+        border: 2px solid #b2d237;
+        border-radius: 0px;
+        color: #fff;
+        cursor: pointer;
+        font-family: proxima_novasemibold;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        &:hover {
+          background: $green;
+        }
+      }
+    }
+    .animation {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .contact-right {
+    background: rgba(0, 0, 0, 0.55);
+
+    .wrapper {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 0.5s;
+      margin: 4% 20%;
+      .engage {
+        font-size: 85px;
+        font-family: proxima_nova_rgbold;
+      }
+
+      .number {
+        color: rgba(255, 255, 255, 0.4);
+        margin-top: 20px;
+        font-size: 50px;
+      }
+
+      .email {
+        color: $green;
+      }
+
+      .blog {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 50px;
+
+        h1 {
+          span {
+            color: $green;
+          }
+        }
+        p:nth-child(even) {
+          color: $green;
+          padding-top: 30px;
+        }
+      }
+    }
+
+    .animation {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
