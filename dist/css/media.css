@@ -1,0 +1,36 @@
+@media (max-width: 1025px) {
+  #header-main {
+    width: 84vh; } }
+
+@media (max-width: 800px) {
+  #header-main {
+    width: 113vh; } }
+
+@media (max-width: 500px) {
+  #header-main {
+    width: fit-content; }
+    #header-main .contact-bar {
+      width: fit-content; }
+  .nav-bar {
+    display: block !important; }
+    .nav-bar img {
+      margin-left: 10% !important;
+      padding-top: 0 !important; }
+    .nav-bar .category {
+      display: block !important;
+      padding-top: 0 !important;
+      padding-left: 30px; }
+      .nav-bar .category .left {
+        padding: 20px; }
+  .home-banner {
+    transform: scale(0.5); }
+  .index-section {
+    display: block; }
+    .index-section .award-winning-a .bg-dark .fade-in {
+      padding-left: 0;
+      transform: scale(0.8); }
+    .index-section section .award-winning-a .bg-dark .content {
+      padding-left: 0; }
+    .index-section .award-winning-b .fade-in {
+      transform: scale(0.7);
+      padding-left: 0; } }

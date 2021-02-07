@@ -1,0 +1,67 @@
+//For screens 1025px and below
+
+@media (max-width: 1025px) {
+  #header-main {
+    width: 84vh;
+  }
+}
+
+//For the tablets
+@media (max-width: 800px) {
+  #header-main {
+    width: 113vh;
+  }
+}
+
+//Smartphones
+@media (max-width: 500px) {
+  #header-main {
+    width: fit-content;
+
+    .contact-bar {
+      width: fit-content;
+    }
+  }
+
+  .nav-bar {
+    display: block !important;
+
+    img {
+      margin-left: 10% !important;
+      padding-top: 0 !important;
+    }
+
+    .category {
+      display: block !important;
+      padding-top: 0 !important;
+      padding-left: 30px;
+
+      .left {
+        padding: 20px;
+      }
+      .right {
+      }
+    }
+  }
+  .home-banner {
+    transform: scale(0.5);
+  }
+
+  .index-section {
+    display: block;
+
+    .award-winning-a .bg-dark .fade-in {
+      padding-left: 0;
+      transform: scale(0.8);
+    }
+
+    section .award-winning-a .bg-dark .content {
+      padding-left: 0;
+    }
+
+    .award-winning-b .fade-in {
+      transform: scale(0.7);
+      padding-left: 0;
+    }
+  }
+}
