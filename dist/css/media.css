@@ -12,7 +12,8 @@
     #header-main .contact-bar {
       width: fit-content; }
   .nav-bar {
-    display: block !important; }
+    display: block !important;
+    top: 0; }
     .nav-bar img {
       margin-left: 10% !important;
       padding-top: 0 !important; }
