@@ -10,7 +10,8 @@
   #header-main {
     width: fit-content; }
     #header-main .contact-bar {
-      width: fit-content; }
+      width: fit-content;
+      position: relative; }
   .nav-bar {
     display: block !important;
     top: 0;
