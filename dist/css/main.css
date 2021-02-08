@@ -200,7 +200,7 @@ section {
       padding-left: 100px; }
 
 footer {
-  padding-top: 10px;
+  height: 4rem;
   background: #2f2f35; }
   footer .footer-list {
     width: 100%;
