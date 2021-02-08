@@ -26,10 +26,12 @@
   .nav-bar {
     display: block !important;
     top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative !important;
 
     img {
-      margin-left: 10% !important;
-      padding-top: 0 !important;
+      display: none;
     }
 
     .category {
@@ -43,6 +45,10 @@
       .right {
       }
     }
+  }
+
+  .bg {
+    background: none !important;
   }
   .home-banner {
     transform: scale(0.5);
@@ -64,5 +70,10 @@
       transform: scale(0.7);
       padding-left: 0;
     }
+  }
+
+  .index-footer {
+    position: relative;
+    top: 500px;
   }
 }

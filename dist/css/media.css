@@ -13,16 +13,20 @@
       width: fit-content; }
   .nav-bar {
     display: block !important;
-    top: 0; }
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative !important; }
     .nav-bar img {
-      margin-left: 10% !important;
-      padding-top: 0 !important; }
+      display: none; }
     .nav-bar .category {
       display: block !important;
       padding-top: 0 !important;
       padding-left: 30px; }
       .nav-bar .category .left {
         padding: 20px; }
+  .bg {
+    background: none !important; }
   .home-banner {
     transform: scale(0.5); }
   .index-section {
@@ -34,4 +38,7 @@
       padding-left: 0; }
     .index-section .award-winning-b .fade-in {
       transform: scale(0.7);
-      padding-left: 0; } }
+      padding-left: 0; }
+  .index-footer {
+    position: relative;
+    top: 500px; } }
