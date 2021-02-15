@@ -34,7 +34,7 @@ img {
   border-bottom: 5px solid #b3d146; }
 
 .contact-bar {
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   padding: 10px;
