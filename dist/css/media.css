@@ -1,46 +1,45 @@
-@media (max-width: 1025px) {
-  #header-main {
-    width: 84vh; } }
-
 @media (max-width: 800px) {
   #header-main {
-    width: 113vh; } }
+    height: 30rem; }
+    #header-main .home-banner {
+      transform: scale(0.5);
+      padding-top: 15%; }
+    #header-main a {
+      padding: 0; }
+    #header-main .contact-bar {
+      z-index: 1; }
+    #header-main .nav-bar {
+      z-index: 1; }
+  .index-section {
+    grid-template-columns: repeat(1, 1fr); }
+    .index-section .award-winning-a .bg-dark .fade-in {
+      padding-left: 100px;
+      transform: scale(0.8); }
+    .index-section .award-winning-b .content-a {
+      transform: scale(0.8); }
+  footer {
+    display: none; } }
 
 @media (max-width: 500px) {
   #header-main {
-    width: 100%; }
+    height: 30rem; }
+    #header-main .home-banner {
+      transform: scale(0.3);
+      padding-top: 15%; }
+    #header-main a {
+      padding: 0; }
     #header-main .contact-bar {
-      width: fit-content;
-      position: relative;
-      width: 100%; }
-  .nav-bar {
-    display: block !important;
-    top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative !important; }
-    .nav-bar img {
-      display: none; }
-    .nav-bar .category {
-      display: block !important;
-      padding-top: 0 !important;
-      padding-left: 30px; }
-      .nav-bar .category .left {
-        padding: 20px; }
-  .bg {
-    background: none !important; }
-  .home-banner {
-    transform: scale(0.5); }
+      z-index: 1;
+      width: fit-content; }
+    #header-main .nav-bar {
+      z-index: 1;
+      flex-direction: column; }
   .index-section {
-    display: block; }
+    grid-template-columns: repeat(1, 1fr); }
     .index-section .award-winning-a .bg-dark .fade-in {
-      padding-left: 0;
-      transform: scale(0.8); }
-    .index-section section .award-winning-a .bg-dark .content {
-      padding-left: 0; }
-    .index-section .award-winning-b .fade-in {
+      padding-left: 100px;
       transform: scale(0.7);
       padding-left: 0; }
-  .index-footer {
-    position: relative;
-    top: 500px; } }
+    .index-section .award-winning-b .content-a {
+      transform: scale(0.7);
+      padding-left: 0; } }
