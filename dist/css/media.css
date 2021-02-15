@@ -29,13 +29,13 @@
     #header-main a {
       padding: 0; }
     #header-main .contact-bar {
-      z-index: 1;
-      width: fit-content; }
+      z-index: 1; }
     #header-main .nav-bar {
       z-index: 1;
-      flex-direction: column; }
+      flex-direction: column;
+      width: auto; }
   .index-section {
-    grid-template-columns: repeat(1, 1fr); }
+    display: block; }
     .index-section .award-winning-a .bg-dark .fade-in {
       padding-left: 100px;
       transform: scale(0.7);

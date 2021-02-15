@@ -63,16 +63,16 @@
 
     .contact-bar {
       z-index: 1;
-      width: fit-content;
     }
     .nav-bar {
       z-index: 1;
       flex-direction: column;
+      width: auto;
     }
   }
 
   .index-section {
-    grid-template-columns: repeat(1, 1fr);
+    display: block;
 
     .award-winning-a {
       .bg-dark {

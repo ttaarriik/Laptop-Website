@@ -47,7 +47,7 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: -webkit-fill-available;
   padding: 10px;
   background: #2d2f35;
   color: #ffffff;
@@ -87,7 +87,6 @@ img {
     position: fixed;
     left: 0; /* ADDED */
     top: 55px; /* ADDED */
-    width: 100%;
 
     img {
       width: 136px !important;
