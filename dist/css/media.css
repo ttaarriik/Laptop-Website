@@ -32,8 +32,7 @@
       z-index: 1; }
     #header-main .nav-bar {
       z-index: 1;
-      flex-direction: column;
-      width: auto; }
+      flex-direction: column; }
   .index-section {
     display: block; }
     .index-section .award-winning-a .bg-dark .fade-in {
