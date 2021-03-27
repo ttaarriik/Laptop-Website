@@ -8,26 +8,42 @@ let img4 = document.querySelector(".img4");
 let img5 = document.querySelector(".img5");
 let img6 = document.querySelector(".img6");
 
+let imgArray = [img1, img2, img3, img4, img5, img6];
+
+const isInViewPort = el => {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 && 
+        rect.bottom <= 
+        (window.innerHeight || 
+        document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth ||
+        document.documentElement.clientWidth)
+    );
+};
+
+
 window.addEventListener('scroll', () => {
     if(window.scrollY != 0){
         navBar.classList.add('bg');
     }else {
         navBar.classList.remove('bg');
     }
-    console.log(scrollY);
-    if(window.scrollY >= 85) {
-        img3.classList.add('opacity');
-        img4.classList.add('opacity');
-    }
-    if(window.scrollY >= 400) {
-        img5.classList.add('opacity');
-        img6.classList.add('opacity');
-    }
+
+    imgArray.forEach(img => {
+        if(isInViewPort(img)){
+            img.classList.add('opacity');
+        }
+    })
 });
 
 window.addEventListener('load', () => {
-    img1.classList.add('opacity');
-    img2.classList.add('opacity');
+    imgArray.forEach(img => {
+        if(isInViewPort(img)){
+            img.classList.add('opacity');
+        }
+    })
 
 });
 

@@ -8,12 +8,22 @@ let img5 = document.querySelector('.img5');
 let img6 = document.querySelector('.img6');
 let img7 = document.querySelector('.img7');
 let img8 = document.querySelector('.img8');
+let imgArray = [img2, img3, img4, img5, img6, img7, img8];
 
-//Get percentage for the scroll
-var h = document.documentElement, 
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
+const isInViewPort = el => {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 && 
+        rect.bottom <= 
+        (window.innerHeight || 
+        document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth ||
+        document.documentElement.clientWidth)
+    );
+};
+
+
 
 window.addEventListener('scroll', () => {
     if(window.scrollY != 0){
@@ -21,37 +31,22 @@ window.addEventListener('scroll', () => {
     }else {
         navBar.classList.remove('bg');
     }
-    console.log("gegs");
+
 });
 //Fade img1 when the page loads
 window.addEventListener('load', () => {
-    img1.classList.add('opacity');
-    img1.style.transform = "translateX(0)";
-
+        console.log("grsee")
+        img1.classList.add('opacity');
+        img1.style.transform = "translateX(0)";
+  
 })
 
 //Fade in images when scrolling
 window.addEventListener('scroll', () => {
-    if(window.scrollY >= 200){
-        img2.classList.add('opacity');
-        img3.classList.add('opacity');
-        img2.style.transform = 'translateX(0)';
-        img3.style.transform = 'translateX(0)';
-    }
-    if(window.scrollY >= 620){
-        img4.classList.add('opacity');
-        img5.classList.add('opacity');
-        img6.classList.add('opacity');
-        img4.style.transform = 'translateX(0)';
-        img6.style.transform = 'translateX(0)';
-    }
-    if(window.scrollY >= 1120){
-        img7.classList.add('opacity');
-        img8.classList.add('opacity');
-        img7.style.transform = 'translateX(0)';
-        img8.style.transform = 'translateX(0)';
-    }
-
-    var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-    console.log(percent);
+    imgArray.forEach(img => {
+        if(isInViewPort(img)){
+            img.classList.add('opacity');
+            img.style.transform = 'translateX(0)';
+        }
+    })
 })

@@ -4,6 +4,8 @@
 }
 
 //For the tablets
+
+//Index
 @media (max-width: 800px) {
   #header-main {
     height: 30rem;
@@ -48,6 +50,8 @@
 }
 
 //Smartphones
+
+//Index
 @media (max-width: 500px) {
   #header-main {
     height: 30rem;
@@ -89,5 +93,54 @@
         padding-left: 0;
       }
     }
+  }
+}
+
+//Product
+
+//iPads
+@media (max-width: 800px) {
+  #header-product {
+    a {
+      padding: 0;
+    }
+
+    .contact-bar {
+      z-index: 1;
+    }
+    .nav-bar {
+      z-index: 1;
+    }
+  }
+}
+
+//Mobile
+@media (max-width: 500px) {
+  #header-product {
+    a {
+      padding: 0;
+    }
+
+    .contact-bar {
+      z-index: 1;
+    }
+    .nav-bar {
+      z-index: 1;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+
+  .product-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .product-footer {
+    display: block;
   }
 }

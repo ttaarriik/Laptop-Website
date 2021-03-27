@@ -43,3 +43,29 @@
     .index-section .award-winning-b .content-a {
       transform: scale(0.7);
       padding-left: 0; } }
+
+@media (max-width: 800px) {
+  #header-product a {
+    padding: 0; }
+  #header-product .contact-bar {
+    z-index: 1; }
+  #header-product .nav-bar {
+    z-index: 1; } }
+
+@media (max-width: 500px) {
+  #header-product a {
+    padding: 0; }
+  #header-product .contact-bar {
+    z-index: 1; }
+  #header-product .nav-bar {
+    z-index: 1;
+    flex-direction: column;
+    margin-top: 20px; }
+  h1 {
+    font-size: 40px !important; }
+  .product-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem; }
+  .product-footer {
+    display: block; } }
