@@ -28,7 +28,8 @@
       #contact-section .contact-left form input {
         height: 39px;
         background: rgba(255, 255, 255, 0.18);
-        border: 1px solid transparent; }
+        border: 1px solid transparent;
+        color: #b3d146; }
       #contact-section .contact-left form textarea {
         background: rgba(255, 255, 255, 0.18);
         border: 1px solid transparent; }
